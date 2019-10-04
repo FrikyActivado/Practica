@@ -1,6 +1,5 @@
 body{
-	
-	background: linear-gradient(rgba(22,88,141,1),rgba(22,88,161,0.6)) fixed;
+		background: linear-gradient(rgba(22,88,141,1),rgba(22,88,161,0.6)) fixed;
 }
 .logo {
 	width: 30%;
