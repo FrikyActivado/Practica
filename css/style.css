@@ -1,0 +1,15 @@
+body{
+	
+	background: linear-gradient(rgba(22,88,141,1),rgba(22,88,161,0.6)) fixed;
+}
+.logo {
+	width: 30%;
+}
+
+.material{
+	 box-shadow: 5px 3px 4px rgba(0,0,0,0.3);
+}
+
+@-ms-viewport{
+  width: device-width;
+}
