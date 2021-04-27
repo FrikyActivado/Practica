@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #003399 0%, #66ccff 100%)fixed;
+}
+img{
+	width: 75vw;
+/*display:block;
+margin:auto;*/
+}
+/*.tamaño{
+	width: 30vw;
+}*/
+.container-fluid {  
+  width: 100%;  
+  padding-right: 15px;  
+  padding-left: 15px;  
+  margin-right: auto;  
+  margin-left: auto;  
+} 
+.fondo { 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+  
+@media (min-width: 1200px) {  
+  .container {  
+    width: 35vw;   
+   /* background-image: linear-gradient(bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+*/  }  
+
+/*.fondo { 
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));*/
+	/*background-color: red;*/
+
+}
+  img{
+  	width: 25vw;
+  }
+
+}  
+
+

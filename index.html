@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> --> 
 	<title>Practica HTML,css,js,bootstrap</title>
+		<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,25 +20,31 @@
 		</div>
 		<div class="row mb-3">
 			<div class="bg-light rounded-lg mx-auto material">
-				<form action="#" class=" text-center px-4 py-4">
+				<div  class=" text-center px-4 py-4">
 					<h5>Nombre de usuario</h5>
 					<div class="input-group mb-3 ">
-						<input type="text" class="form-control text-center" placeholder="bgorgona" aria-label="Usuario" aria-describedby="basic-addon1">
+						<input type="text" class="form-control text-center" aria-label="Usuario" aria-describedby="basic-addon1" id="usr" name="usr">
 						<div class="input-group-prepend">
 							<span class="input-group-text" id="basic-addon1">@grupodelsol.cr</span>
 						</div>
 					</div>
 					<h5>Contraseña</h5>
-					<div class="input-group mb-3">
-						<input type="password" class="form-control text-center" placeholder="Contraseña" aria-label="Usiario" aria-describedby="basic-addon1">
+					<div class="input-group mb-3">	
+						<input type="password" class="form-control text-center" aria-label="Usuario" aria-describedby="basic-addon1" id="pwr" name="pwr">
 					</div>
 					<div class="mb-3">
-						<button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+						<button type="submit" class="btn btn-primary" onclick="login()">Iniciar Sesion</button>
 					</div>
-				</form>
+				</div>
 				<h6 class="text-center text-muted">Grupo del Sol</h6>
 			</div>
 		</div>
 	</div>
+<script>
+	
+	if(sessionStorage.getItem("usuario")!=null){
+		window.location.href="noticias.html";
+	}
+</script>
 </body>
 </html>
